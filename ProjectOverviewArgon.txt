@@ -1,0 +1,53 @@
+To Do
+	Software check
+	Spyder?  Github? GnuPlot?
+
+	
+
+#########################
+
+Vragen
+	1. Interactie tussen Ar atomen?
+		Lennard-Jones Potential (bijbehorende kracht)
+	2. Hoe beweeg je ze?
+		Gebruik Velocity Verlet algorithm.
+	3. Randvoorwaarden?
+		Periodic BC, houd met rekening met kortste afstand.
+	4. Beginvoorwaarden?
+		Posities: bravais-fcc rooster
+		Impuls:	Maxwell-Boltzmann
+	5. Hoe weet ik of de oplossing ok is?
+		Check voor weinig deeltjes.
+		Check literatuur.
+		Check E is behouden, p is behouden?
+
+	6. Wat is interessant om te bekijken?
+		Druk, correlatiefunctie?
+
+######################### 
+
+Plan van aanpak
+
+Begin met maken van programma voor N deeltjes, die een LJ interactie hebben en een periodic BC hebben.
+
+	Initialiseren:
+	
+		Initialise variable for R and P, which include the position and momenta of all particles.
+		
+		Set position according to bravais-fcc lattice
+		Set momenta according to Maxwell-Boltzmann and normalize drift to zero and scale v to assume T.
+		Initialize forces
+
+	Computation:
+	
+		Compute the forces. Take care of the BC.
+		Use Verlets algorithm to compute R,P and F at t+h:
+			Compute R, use periodic BC
+			Check for exits -> place back in volume
+			Compute F at t+h
+			Compute P at t+h			
+		Repeat for many timesteps
+		Every n timesteps rescale v to keep T, (also rescale v to adjust for drift velocity?)
+	
+	Run Checks:
+		Is E conserved? Is P conserved?
