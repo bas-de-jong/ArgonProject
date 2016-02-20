@@ -1,8 +1,13 @@
-To Do
-	Software check
-	Spyder?  Github? GnuPlot?
-
-	
+To Do:
+	1. Make sure the program can pass these tests:
+		- Energy is conserved
+		- System is time-reversible
+	2. Implement new functionalities in separate files and branches:
+ 		- Clean and well explained version of the program
+		- Verlet neighbour list and cutoff distance
+		- T constant 
+		- P constant
+		- Correlation function
 
 #########################
 
