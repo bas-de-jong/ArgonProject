@@ -1,0 +1,6 @@
+Cv_1:
+	T_vector = np.linspace(0.2,10,15)   
+	a_vector = np.array([1.7, 2.3, 2.8]) 
+	density_vector = 4/(a_vector**3)
+	N = 864                             
+	nsteps = 20000

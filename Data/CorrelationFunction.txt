@@ -1,0 +1,9 @@
+Correlation Function folder contains data of following run:
+	T_vector = [0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.8, 2.2, 3.0, 4]       # Temperature. T = (temperature in Kelvin) / 119.8
+	density_vector = np.linspace(0.1,1.5,15)     # Density
+
+	a_vector = (4/density_vector)**(1/3)             # Unit cell size
+
+	nsteps = 2000                      # Number of timesteps
+	N = 2048                            # Number of particles
+	nbins = 400
