@@ -4,3 +4,11 @@ Cv_1:
 	density_vector = 4/(a_vector**3)
 	N = 864                             
 	nsteps = 20000
+
+Cv_4:
+	T_vector = np.linspace(0.1,10,15)   
+	a_vector = np.array([1.43, 2.0, 2.8]) 
+	density_vector = 4/(a_vector**3)
+	N = 864                             
+	nsteps = 20000
+	nequi = 10000
