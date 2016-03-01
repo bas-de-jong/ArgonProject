@@ -43,9 +43,19 @@ meanPressure_6:
 	nsteps = 10000
 	N = 864
 
-meanPressure_7:
+meanPressure_7 & _8:
 	density_array = [np.linspace(0.4, 1.2, 20), np.linspace(0.4, 1.2, 20), np.linspace(0.2, 0.9, 20)]
 	T_array = np.array([0.2, 0.8, 1.6])
 	neq = 10000 
 	nsteps = 20000
-	N = 864                      
+	N = 864        
+           
+meanPressure_9:
+density_array = [np.linspace(0.7, 1.4, 15), np.linspace(0.4, 1.4, 20), np.linspace(0.4, 0.9, 20)]
+T_array = np.array([1, 1.35, 2.7])
+
+neq = 5000       # equilibrium point
+nsteps = 10000   # Number of timesteps
+
+#System size
+N = 864         # Number of particles

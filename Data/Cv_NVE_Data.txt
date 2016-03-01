@@ -12,3 +12,18 @@ Cv_4:
 	N = 864                             
 	nsteps = 20000
 	nequi = 10000
+Cv_6:
+T_vector = np.linspace(0.1,10,15)   # Temperature. T = (temperature in Kelvin) / 119.8 
+a_vector = np.array([1.43, 2.0, 2.8])  # Unit cell size
+density_vector = 4/(a_vector**3)
+N = 864                             # Number of particles
+nsteps = 40000
+nequi = 10000
+	
+Cv_10:
+T_vector = np.linspace(0.5,10,20)   # Temperature. T = (temperature in Kelvin) / 119.8 
+a_vector = np.array([1.43, 2.0, 2.8])  # Unit cell size
+density_vector = 4/(a_vector**3)
+N = 864                             # Number of particles
+nsteps = 40000
+nequi = 20000
